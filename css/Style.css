@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(Iconstyle.css);
+@import url(Banner.css);
+@import url(menu.css);
+@import url(Blog.css);
+@import url(Info.css);
+@import url(modal.css);
+    
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+h1{
+	font-size: 1.2em;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+/* me acabo de dar ctta que no tiene nigun efecto sobre los html hhummmm
+.caja{
+    width: 99%;
+    margin: auto;
+    background-color: white;
+	}*/
+
+header{
+    background: white;
+    border-bottom: rgb(21, 77, 223) solid 4px;
+    color: #fff;
+    height: 110px;
+    left:0;
+    padding-top:20px;    
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+}
+
+header img{
+    float: left;
+    width: 350px;
+    margin-top:-19px;
+}
+.contenedor {
+    width: 98%;
+    margin: auto;
+    display: block;
+    /*outline:red solid 1px; */
+}
+
+
+h1 {
+    display:none;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenida{
+    text-align: center;
+    
+}
+
+footer .contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    height: 100px;
+
+    /*outline: blue solid 1px;*/
+
+}
+
+.copy{
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color:#333;
+    text-decoration: none;
+}
+
+.form-registro{
+    flex-wrap: wrap;   
+}
+
+@media (min-width: 530px){
+
+    h1{
+        font-size: 1.8em;
+    }
+    header img{
+        width: 400px;
+    }
+
+@media (min-width: 768px){
+    .sociales{
+        width: auto;
+    }
+    footer .contenedor{
+        justify-content: space-between;
+        padding: 2%;
+        /*padding: 20%;*/
+    }
+
+
+@media (min-width: 1024px){
+    .contenedor{
+        width: 1000px;
+    }
+}
+

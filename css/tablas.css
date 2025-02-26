@@ -1,0 +1,18 @@
+.tabla{
+	/*position: absolute;	*/
+	align-content: center;	
+	border: 2px solid grey;
+	width: 	90%;
+	margin: auto;
+}
+
+.fila{
+	border: 1px solid grey;
+	
+}
+
+th,tr, td{
+	outline: .1px grey solid;
+	padding: 0;
+	margin:0;
+}

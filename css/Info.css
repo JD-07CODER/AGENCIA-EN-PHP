@@ -1,0 +1,40 @@
+h4{
+    font-size: 1em;
+}
+
+#info{
+    background: rgba(0, 64, 128,.8);
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+        box-shadow: 10px 0px 50px rgba(0,0,0,.4);
+}
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.info-p{
+    margin: 10px;
+    }
+
+.info-p img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+@media(min-width:480px){
+    .info-p{
+        width: 40%;
+    }
+}
+
+@media(min-width:1024px){
+    .info-p{
+        width: 210px;
+    }
+}

@@ -1,0 +1,109 @@
+#check{
+    display: none;
+}
+
+.menu a i {
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 36px;
+    margin: 0px 0;
+    margin-top: 20px;
+    cursor: pointer;
+    color:rgba(21, 77, 223,.7);
+}
+
+.menu{
+    background: rgba(255, 255, 255,.85);
+    font-weight: 700;
+    /*rgba(51,51,51,0.9);*/
+    height: 100vh;
+    left:0;
+    right:100%;
+    position: absolute;
+    top:110px;
+    transition: all 0.35s;
+    transform: translateX(-100%);
+    width: 200px;
+}
+
+.menu a {
+    border-bottom: 2px solid rgba(255,255,255,1);
+    color: #333;
+    /*#fff;*/
+    display: block;
+    height: 50px;
+    padding: 15px;
+    text-decoration: none;
+		
+	box-shadow: 5px 0 rgba(255,255,255,0.95) inset;
+	transition: all .3s;
+}
+
+.menu a:hover {
+		box-shadow: 300px 0 rgba(255,255,255,0.95) inset;
+		padding-left:10%;
+    }
+
+#check:checked ~ *{
+	transform: translateX(0%);
+	
+}
+
+
+/*----------------------------------------------RESPONSIVE----------------------------*/
+
+@media (min-width:860px){
+    .menu{
+        float: right;
+        height: 50px;
+        margin-top: 28px;
+        position: relative;
+        top:8px;
+        transform: translateX(0);
+        width: auto;
+        background:white;
+    }/*hay un efecto del margen al dar click en los botones causado 
+	por el margen -50 a su vez fue puesto ali para corregin algo con 
+	el position absolute del header y relative del menu*/
+    nav>ul{
+        display: flex;
+    }
+
+    nav>ul>li{
+        height: 50px;
+        overflow: hidden;
+    }
+    nav>ul>li:hover >lu{
+        height: 50px;
+        overflow: visible;
+    }
+    .menu a{
+        border: none;
+		box-shadow:0 0;
+		margin-top:0; /*20px*/
+    }
+    
+    .menu >ul>li>a:hover{
+        /*box-shadow:0 0;*/
+        padding-top: 50px;
+        padding-left: 15px;
+        width: inherit;
+
+    }
+
+    .menu >ul>li>a i {
+    display: block;
+    
+    text-align: center;
+    line-height: 3em;
+    margin-top: -50px;
+}
+    header label{
+        display:none;
+    }
+
+}
+/*----------------------------------------------RESPONSIVE----------------------------*/

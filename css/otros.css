@@ -1,0 +1,44 @@
+
+
+.info{
+	margin-top: 150px;
+	height: 200px;
+
+	/*outline: red 2px solid;*/
+}
+
+.info > h2 {
+	margin-bottom: 300px: 
+
+}
+
+.cuerpo{
+	margin-top: 180px;
+	height: 50vh;
+	
+	/*outline: green solid 2px;*/
+}
+
+.input_txt{
+	width: 91.5%;
+	/*border: red solid 1px;*/
+}
+
+#form_crud{
+	height: 225px;
+	font-size: .8em; 
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#form_crud > label{
+	margin-left: 1em;
+}
+
+select{
+	margin-top: 5px;
+	height: 30px;
+	margin-left: 42.5%;
+	width: 41.5%;
+	border-radius: 3px;
+}
